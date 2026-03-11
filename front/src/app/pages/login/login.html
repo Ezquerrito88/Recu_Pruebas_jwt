@@ -1,0 +1,17 @@
+<div style="padding: 20px;">
+  <h2>Iniciar Sesión</h2>
+  
+  <form (ngSubmit)="login()">
+    <div>
+      <label>Email:</label>
+      <input [(ngModel)]="email" name="email" type="email" required>
+    </div>
+    
+    <div style="margin-top: 10px;">
+      <label>Contraseña:</label>
+      <input [(ngModel)]="password" name="password" type="password" required>
+    </div>
+
+    <button type="submit" style="margin-top: 20px;">Entrar</button>
+  </form>
+</div>
